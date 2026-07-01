@@ -1,0 +1,30 @@
+Database stores 
+1. user info
+2. url-mapping info
+3. click-event info
+
+and each database table has its model class
+
+User	URL Mapping	Click Event
+id
+email
+password is stored using BCrypt
+role
+username	id
+original_url
+short_url used to store short url generated
+click_count to store total clicks and save time
+user_id
+created_date	id
+click_date
+url_mapping_id
+
+
+
+Why ClickEvent if CliclCount exists?
+--> instead querying the ClickEvent table and have it count eg: 5million clicks we can simply increment the clickcount variable every time a redirect happens using the short url😁😉
+basically we use 
+click-count ---> fast dashboard statistics
+click-event ---> detailed analysis of a single click
+
+
