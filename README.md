@@ -1,5 +1,3 @@
-Sure — here is the exact **`README.md` Markdown code** you can copy and paste:
-
 # URL Shortener
 
 A URL Shortener backend built using **Spring Boot, Spring Security, JWT, JPA/Hibernate, and MySQL**.
